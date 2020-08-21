@@ -12,7 +12,7 @@ import concurrent
 import datetime
 
 
-BOT_OWNER_ROLE = 'MoonliteツRunner' # change to what you need
+BOT_OWNER_ROLE = 'Fetch' # change to what you need
 #BOT_OWNER_ROLE_ID = "544387608378343446"
   
  
@@ -21,7 +21,14 @@ BOT_OWNER_ROLE = 'MoonliteツRunner' # change to what you need
 oot_channel_id_list = [
 "729900240395829340", 
 "722080589997539368", 
-
+"743059378743148555",
+"731059238507380756",
+"737933577634840596",
+"735434573533675601",
+"744516111877275729",
+"729167871413846097",
+"740581333788786818",
+"733232237482475581",
 
 
 
@@ -234,7 +241,7 @@ class Bot(discord.Client):
 
     async def on_ready(self):
         print("==============")
-        print("Moonlight Trivia SELF BOT")
+        print("Trivia edges SELF BOT")
         print("Connected to discord.")
         print("User: " + self.user.name)
         print("ID: " + str(self.user.id))
@@ -268,7 +275,7 @@ class Bot(discord.Client):
                   
                 self.embed_channel_id = message.channel.id
           #  else:
-       #         await message.channel.send("**_Chal Nikal pahle fursat me ye tere liye nahi h bsdk_**😝")
+       #         await message.channel.send("**_Chal Nikal pahle fursat me ye tere liye nahi h bsdk_**😝 sorry yeh jo bjinkaha bot ne")
          #   return
 
 
@@ -279,7 +286,7 @@ class Bot(discord.Client):
           #embed.add_field(name="**__BOT STATUS__**", value="ONLINE🟢`(Auto Run)`", inline=False)
           #embed.add_field(name="**__BOT COMMAND__**", value="`$lo`", inline=False)
           #embed.add_field(name="**__BOT CONNECTION__**", value="ALL PRIVATE SERVER", inline=False)
-          #embed.set_footer(text=f"©Loco Trivia Beta v1.13 | </> with 💟 by Ashwin#4734!", \
+          #embed.set_footer(text=f"©Loco Trivia Beta v1.13 | </> with 💟 by Saini saab!", \
             #icon_url="https://cdn.discordapp.com/attachments/660019723140071435/660068972372295681/IMG_20191220_225620.jpg")
           #embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/656554502543114248/663261544146272277/556321441058914305.png")
           #embed.set_image(url="https://i.imgur.com/b6fW3cI.gif")
