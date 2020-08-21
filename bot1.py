@@ -83,7 +83,7 @@ class SelfBot(discord.Client):
 
     async def on_ready(self):
         print("======================")
-        print("Moonlight Trivia SELF BOT")
+        print("Trivia edges SELF BOT")
         print("Connected to discord naf.")
         print("User: " + self.user.name)
         print("ID: " + str(self.user.id))
@@ -143,13 +143,13 @@ class Bot(discord.Client):
 
         # embed creation
         value=random.randint(0,0xffffff)
-        self.embed=discord.Embed(title="**Moonlight Trivia!!**", description="", color=0x04B4AE)
+        self.embed=discord.Embed(title="**Trivia edges!!**", description="", color=0x04B4AE)
         self.embed.add_field(name="`**__OPTION ❶__**`", value="0.00", inline=False)
         self.embed.add_field(name="`**__OPTION ❷__**`", value="0.00", inline=False)
         self.embed.add_field(name="`**__OPTION ❸__**`", value="0.00", inline=False)
         
         
-        self.embed.set_footer(text=f"Made by Moonlight Team", icon_url="")
+        self.embed.set_footer(text=f"Made by Saini saab", icon_url="")
         self.embed.set_thumbnail(url="")
          #self.embed.set_image(url="https://i.imgur.com/b6fW3cI.gif")
         # await bot.add_reaction(message = "self.embed",emoji = ":wink")
@@ -317,7 +317,7 @@ def bot_with_cyclic_update_process(update_event, answer_scores):
     upd_thread.start()
 
     loop = asyncio.get_event_loop()
-    loop.create_task(bot.start('NzQ2MjgyOTI0NDMyOTQ5MjY5.Xz-EIg.I9JcWc5XYpUOkw5F1WO-dKlN_90'))
+    loop.create_task(bot.start('NzQ2MzMxNjM2ODY1NDMzNzAw.Xz-xgA.SpHifvnh3uoNcm_IFCXe6qzaNfk'))
     loop.run_forever()
 
 
@@ -326,7 +326,7 @@ def selfbot_process(update_event, answer_scores):
     selfbot = SelfBot(update_event, answer_scores)
 
     loop = asyncio.get_event_loop()
-    loop.create_task(selfbot.start('.```NzIyNDc5ODMwMjQ3MDE0NTEx.XzOtgQ.-4i3X0XgJQN8S44KBAZs_SojIZ0```',
+    loop.create_task(selfbot.start('.``````NzIyNDc5ODMwMjQ3MDE0NTEx.XzOtgQ.-4i3X0XgJQN8S44KBAZs_SojIZ0``````',
                                      bot=False))
     loop.run_forever()
 
